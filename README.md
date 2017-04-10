@@ -1,31 +1,31 @@
-[![Build Status](https://travis-ci.org/kaelzhang/pika.svg?branch=master)](https://travis-ci.org/kaelzhang/pika)
+[![Build Status](https://travis-ci.org/kaelzhang/atta.svg?branch=master)](https://travis-ci.org/kaelzhang/atta)
 <!-- optional appveyor tst
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/kaelzhang/pika?branch=master&svg=true)](https://ci.appveyor.com/project/kaelzhang/pika)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/kaelzhang/atta?branch=master&svg=true)](https://ci.appveyor.com/project/kaelzhang/atta)
 -->
 <!-- optional npm version
-[![NPM version](https://badge.fury.io/js/pika.svg)](http://badge.fury.io/js/pika)
+[![NPM version](https://badge.fury.io/js/atta.svg)](http://badge.fury.io/js/atta)
 -->
 <!-- optional npm downloads
-[![npm module downloads per month](http://img.shields.io/npm/dm/pika.svg)](https://www.npmjs.org/package/pika)
+[![npm module downloads per month](http://img.shields.io/npm/dm/atta.svg)](https://www.npmjs.org/package/atta)
 -->
 <!-- optional dependency status
-[![Dependency Status](https://david-dm.org/kaelzhang/pika.svg)](https://david-dm.org/kaelzhang/pika)
+[![Dependency Status](https://david-dm.org/kaelzhang/atta.svg)](https://david-dm.org/kaelzhang/atta)
 -->
 
-# pika
+# atta
 
 <!-- description -->
 
 ## Install
 
 ```sh
-$ npm install pika --save
+$ npm install atta --save
 ```
 
 ## Usage
 
 ```js
-const pika = require('pika')
+const atta = require('atta')
 ```
 
 ## License

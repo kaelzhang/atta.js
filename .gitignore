@@ -1,5 +1,8 @@
-# babel dist
-/lib
+# Ignore every directory that names `lib`
+lib
+# except the following dirs
+!/lib
+!/test/lib
 
 # Numerous always-ignore extensions
 *.bak
