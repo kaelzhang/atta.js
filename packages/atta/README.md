@@ -27,7 +27,8 @@ $ npm install atta --save
 ```js
 const fsp = require('fs-promise')
 // Creates a 100x100 stage
-const playground = require('atta')(100, 100)
+const atta = require('atta')
+const playground = atta(100, 100)
 const {
   Image,
   Curve
@@ -43,6 +44,7 @@ const img = new Image(await fsp.readFile(filename))
 
 layer2.paste(img) // or img.pasteTo(layer2)
 
+// Split RGB channel
 const [r,,] = layer1.channel('rgb') // or 'lab'
 r.applyCurve(new Curve(formula))
 
