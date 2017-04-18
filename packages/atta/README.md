@@ -25,7 +25,33 @@ $ npm install atta --save
 ## Usage
 
 ```js
+const fsp = require('fs-promise')
 const atta = require('atta')
+const {
+  Image,
+  Curve
+} = atta
+
+const layer1 = atta().createLayer()
+// `layer2` is upon `layer1`
+const layer2 = atta().createLayer()
+
+const img = new Image(await fsp.readFile(filename))
+.rotate(.2)
+.crop([10, 10, 100, 100])
+
+layer2.paste(img) // or img.pasteTo(layer2)
+
+const [r,,] = layer1.channel('rgb') // or 'lab'
+r.applyCurve(new Curve(formula))
+
+layer1.fillText('atta')
+
+// Brings layer1 up
+layer1.insertUpon(layer2)
+
+// Example with Koa2
+ctx.body = atta().createStream('jpg')
 ```
 
 ## License
