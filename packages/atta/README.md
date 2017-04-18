@@ -26,15 +26,16 @@ $ npm install atta --save
 
 ```js
 const fsp = require('fs-promise')
-const atta = require('atta')
+// Creates a 100x100 stage
+const playground = require('atta')(100, 100)
 const {
   Image,
   Curve
 } = atta
 
-const layer1 = atta().createLayer()
+const layer1 = playground.createLayer()
 // `layer2` is upon `layer1`
-const layer2 = atta().createLayer()
+const layer2 = playground.createLayer()
 
 const img = new Image(await fsp.readFile(filename))
 .rotate(.2)
@@ -51,7 +52,7 @@ layer1.fillText('atta')
 layer1.insertUpon(layer2)
 
 // Example with Koa2
-ctx.body = atta().createStream('jpg')
+ctx.body = playground.createStream('jpg')
 ```
 
 ## License
