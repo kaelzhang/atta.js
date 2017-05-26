@@ -14,7 +14,7 @@
 
 # atta
 
-<!-- description -->
+The node imaging library which is heavily inspired by [PIL](http://www.pythonware.com/products/pil/).
 
 ## Install
 
@@ -40,6 +40,7 @@ const layer2 = playground.createLayer()
 
 const img = new Image(await fsp.readFile(filename))
 .rotate(.2)
+.resize()
 .crop([10, 10, 100, 100])
 
 layer2.paste(img) // or img.pasteTo(layer2)
@@ -56,6 +57,10 @@ layer1.insertUpon(layer2)
 // Example with Koa2
 ctx.body = playground.createStream('jpg')
 ```
+
+## new Image(imageBuffer)
+
+- **imageBuffer** `Buffer`
 
 ## License
 
