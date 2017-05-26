@@ -25,7 +25,7 @@ $ npm install atta --save
 ## Usage
 
 ```js
-const fsp = require('fs-promise')
+const fs = require('fs-extra')
 // Creates a 100x100 stage
 const atta = require('atta')
 const playground = atta(100, 100)
@@ -38,7 +38,7 @@ const layer1 = playground.createLayer()
 // `layer2` is upon `layer1`
 const layer2 = playground.createLayer()
 
-const img = new Image(await fsp.readFile(filename))
+const img = new Image(await fs.readFile(filename))
 .rotate(.2)
 .resize()
 .crop([10, 10, 100, 100])
