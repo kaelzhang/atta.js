@@ -1,6 +1,6 @@
 {
   "name": "atta",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "atta",
   "main": "lib/index.js",
   "scripts": {
