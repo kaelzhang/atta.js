@@ -14,6 +14,8 @@
 
 # atta
 
+THIS MODULE IS CURRENTLY **WIP**.
+
 The node imaging library which is heavily inspired by [PIL](http://www.pythonware.com/products/pil/).
 
 ## Install
